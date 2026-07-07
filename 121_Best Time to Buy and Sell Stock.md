@@ -222,16 +222,16 @@ class Solution {
 
   ```cpp
   class Solution {
-public:
-    int maxProfit(vector<int>& prices) {
-        int minPrice=prices[0];
-        int maxProfit=0;
-        for(int num:prices)
-        {
-            maxProfit=max(maxProfit, num-minPrice);
-            minPrice=min(minPrice, num);
+    public:
+        int maxProfit(vector<int>& prices) {
+            int minPrice=prices[0];
+            int maxProfit=0;
+            for(int num:prices)
+            {
+                maxProfit=max(maxProfit, num-minPrice);
+                minPrice=min(minPrice, num);
+            }
+            return maxProfit;
         }
-        return maxProfit;
-    }
-};
+    };
 ```
