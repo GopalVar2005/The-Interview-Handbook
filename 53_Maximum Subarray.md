@@ -234,6 +234,7 @@ O(n)
 - Only two variables (`sum` and `maxSum`) are used.
 - No extra space proportional to the input size is required.
 
+C++
 ```cpp
 class Solution {
 public:
