@@ -312,7 +312,7 @@ class Solution {
         }
         for(int i=idx;i<s.size();i++)
         {
-            string temp=s.substr(idx, i-idx+1);
+            string temp=s.substr(idx, i-idx+1);   // length
             if(st.find(temp)!=st.end())
             {
                 if(rec(i+1, s, st, dp))
